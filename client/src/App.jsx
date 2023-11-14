@@ -1,11 +1,7 @@
 import getAllFilesInFolder from "./utilities"
 
 const App = () => {
-  const path = './backend'
 
-  getAllFilesInFolder(path).then(response => console.log(response))
-  .catch(err => console.log(err))
-  
   return (
     <div className='container'>
       <div className='left'>

@@ -1,25 +1,5 @@
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.2",
-    "cross-env": "^7.0.3",
-    "electron": "^27.0.4",
-    "electron-builder": "^24.6.4",
-    "wait-on": "^7.1.0"
-  },
-  "browser": {
-    "fs": false,
-    "path": false,
-    "os": false
-  }
-}
+In order to keep Electron small (file size) and sustainable (the spread of dependencies and APIs) the project limits the scope of the core project.
+
+For instance, Electron uses Chromium's rendering library rather than all of Chromium. This makes it easier to upgrade Chromium but also means some browser features found in Google Chrome do not exist in Electron.
+
+New features added to Electron should primarily be native APIs. If a feature can be its own Node.js module, it probably should be. See the Electron tools built by the community.

@@ -1,10 +1,6 @@
 const fs = require('fs')
-const path = require('path')
 
-const getAllFilesInFolder = (folderPath) => {
-    const files = fs.readdir(folderPath, (err, files)=> {
-        
-    })
-}
 
-export default getAllFilesInFolder
+fs.readdir('C:\\Users\\Admin\\Desktop\\Github\\electron-app\\client\\src\\backend', (err, files) => {
+    console.log(files);
+})
