@@ -6,7 +6,8 @@ app.get('/api/hello-world', (req, res) => {
     res.json('Hello world')
 })
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 3000
+
 app.listen(PORT, ()=>{
-    console.log(`Server listeniong on port ${PORT}`)
+    console.log(`Server listening on port ${PORT}`)
 })
